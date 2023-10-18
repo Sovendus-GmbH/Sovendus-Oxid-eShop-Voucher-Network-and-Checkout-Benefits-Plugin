@@ -1,0 +1,36 @@
+{% extends 'page/checkout/thankyou.html.twig' %}
+
+{% block checkout_thankyou_info %}
+	{{ parent() }}
+	{{ order.initSovendusData(basket) }}
+	{% if order.active %}
+		<div id="sovendus-container"></div>
+		<script>
+			window.sovIframes = window.sovIframes || [];
+            window.sovIframes.push({
+                trafficSourceNumber: {{ order.trafficSourceNumber }},
+                trafficMediumNumber: {{ order.trafficMediumNumber }},
+                iframeContainerId: 'sovendus-container',
+                timestamp: '{{ order.timestamp }}',
+                sessionId: '{{ order.oxorder__oxid.value }}',
+                orderId: '{{ order.oxorder__oxordernr.value }}',
+                orderValue: '{{ order.oxorder__oxtotalnetsum.rawValue }}',
+                orderCurrency: '{{ order.oxorder__oxcurrency.rawValue }}',
+                usedCouponCode: '{{ order.usedCouponCode }}'
+            });
+            window.sovConsumer = {
+                consumerSalutation: '{{ order.consumerSalutation }}',
+                consumerFirstName: '{{ order.oxorder__oxbillfname.rawValue }}',
+                consumerLastName: '{{ order.oxorder__oxbillfname.rawValue }}',
+                consumerEmail: '{{ order.oxorder__oxbillemail.rawValue }}',
+                consumerPhone: '{{ order.oxorder__oxbillfon.rawValue }}',
+                consumerStreet: '{{ order.oxorder__oxbillstreet.rawValue }}',
+                consumerStreetNumber: '{{ order.oxorder__oxbillstreetnr.rawValue }}',
+                consumerZipcode: '{{ order.oxorder__oxbillzip.rawValue }}',
+                consumerCity: '{{ order.oxorder__oxbillcity.rawValue }}',
+                consumerCountry: '{{ order.consumerCountry }}'
+            };
+		</script>
+		<script type="text/javascript" src="https://api.sovendus.com/sovabo/common/js/flexibleIframe.js" async="true"></script>
+	{% endif %}
+{% endblock %}

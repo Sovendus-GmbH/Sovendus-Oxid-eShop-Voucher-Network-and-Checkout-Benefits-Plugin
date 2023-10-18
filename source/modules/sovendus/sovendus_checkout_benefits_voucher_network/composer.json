@@ -1,0 +1,36 @@
+{
+    "name": "sovendus/sovendus_checkout_benefits_voucher_network",
+    "description": "Official Sovendus Voucher Network & Checkout Benefits plugin for Oxid eShop",
+    "type": "oxideshop-module",
+    "keywords": [
+        "Sovendus",
+        "Voucher Network",
+        "Checkout Benefits"
+    ],
+    "homepage": "https://online.sovendus.com/produkte/sovendus-voucher-network/",
+    "license": [
+        "GPL-3.0-only"
+    ],
+    "require": {
+        "php": ">=5.6",
+        "sovendus/sovendus_checkout_benefits_voucher_network": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sovendus\\SovendusVoucherNetwork\\": "../../../source/modules/sovendus/sovendus_checkout_benefits_voucher_network"
+        }
+    },
+    "repositories": {
+        "sovendus/sovendus_checkout_benefits_voucher_network": {
+            "type": "path",
+            "url": "source/modules/sovendus/sovendus_checkout_benefits_voucher_network"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "oxideshop": {
+            "target-directory": "sovendus/sovendus_checkout_benefits_voucher_network"
+        }
+    }
+}
