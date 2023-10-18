@@ -8,10 +8,10 @@ coming soon...
 1. Download the latest version [from here](https://raw.githubusercontent.com/Sovendus-GmbH/Sovendus-Oxid-eShop-Voucher-Network-and-Checkout-Benefits-Plugin/main/releases/sovendus-oxid-voucher-network-checkout-benefits-module-latest.zip)
 2. Navigate to your Oxid eShop root folder
 3. Unpack the downloaded module zip file into your Oxid eShop root folder
-4. After you've unpacked it, the folder structer should look like this: yourOxidShopRoot/source/modules/sovendus/SovendusVoucherNetwork
+4. After you've unpacked it, the folder structer should look like this: yourOxidShopRoot/source/modules/sovendus/sovendus_checkout_benefits_voucher_network
 5. In your Oxid eShop root folder, execute the following commands, to install the plugin: \
-    `vendor/bin/oe-console oe:module:install source/modules/sovendus/sovendus_checkout_benefits_voucher_network`
-    `composer config repositories.sovendus/sovendus_checkout_benefits_voucher_network path source/modules/sovendus/sovendus_checkout_benefits_voucher_network`
+    `vendor/bin/oe-console oe:module:install source/modules/sovendus/sovendus_checkout_benefits_voucher_network` \
+    `composer config repositories.sovendus/sovendus_checkout_benefits_voucher_network path source/modules/sovendus/sovendus_checkout_benefits_voucher_network` \
     `composer require sovendus/sovendus_checkout_benefits_voucher_network:dev-main`
 
 
