@@ -40,6 +40,11 @@ $aLang = [
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_IT_TrafficSourceNumber' => 'Italien Traffic Source Number',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_IT_TrafficMediumNumber' => 'Italien Traffic Medium Number',
 
+    'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_ie' => 'Irland Einstellungen',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_IE_SovendusEnabled' => 'Aktiviere Sovendus Irland',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_IE_TrafficSourceNumber' => 'Irland Traffic Source Number',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_IE_TrafficMediumNumber' => 'Irland Traffic Medium Number',
+
     'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_uk' => 'Vereinigtes Königreich Einstellungen',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_UK_SovendusEnabled' => 'Aktiviere Sovendus Vereinigtes Königreich',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_UK_TrafficSourceNumber' => 'Vereinigtes Königreich Traffic Source Number',

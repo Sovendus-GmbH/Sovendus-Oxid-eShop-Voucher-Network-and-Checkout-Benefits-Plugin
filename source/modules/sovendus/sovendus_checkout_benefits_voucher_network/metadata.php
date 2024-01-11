@@ -11,7 +11,7 @@ $aModule = array(
     'title' => 'Sovendus Voucher Network & Checkout Benefits',
     'description' => 'Official Sovendus Voucher Network & Checkout Benefits module for Oxid eShop',
     'thumbnail' => 'plugin.png',
-    'version' => '1.0.1',
+    'version' => '1.0.2',
     'author' => 'Sovendus - Marcus Brandstaetter',
     'url' => "https://online.sovendus.com/kontakt/kontakt-firmenkunden/",
     'extend' => [
@@ -118,6 +118,23 @@ $aModule = array(
         [
             'group' => 'sovendus_checkout_benefits_voucher_network_it',
             'name' => 'sovendus_checkout_benefits_voucher_network_IT_TrafficMediumNumber',
+            'type' => 'num',
+        ],
+        /** IE */
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_ie',
+            'name' => 'sovendus_checkout_benefits_voucher_network_IE_SovendusEnabled',
+            'type' => 'bool',
+            'value' => false
+        ],
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_ie',
+            'name' => 'sovendus_checkout_benefits_voucher_network_IE_TrafficSourceNumber',
+            'type' => 'num',
+        ],
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_ie',
+            'name' => 'sovendus_checkout_benefits_voucher_network_IE_TrafficMediumNumber',
             'type' => 'num',
         ],
         /** UK */

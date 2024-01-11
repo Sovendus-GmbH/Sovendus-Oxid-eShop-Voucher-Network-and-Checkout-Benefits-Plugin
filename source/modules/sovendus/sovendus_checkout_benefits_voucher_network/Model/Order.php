@@ -47,6 +47,10 @@ class Order extends Order_parent
     const IT_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_IT_TrafficSourceNumber";
     const IT_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_IT_TrafficMediumNumber";
 
+    const IE_SOVENDUS_ENABLED = "sovendus_checkout_benefits_voucher_network_IE_SovendusEnabled";
+    const IE_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_IE_TrafficSourceNumber";
+    const IE_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_IE_TrafficMediumNumber";
+
     const UK_SOVENDUS_ENABLED = "sovendus_checkout_benefits_voucher_network_UK_SovendusEnabled";
     const UK_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_UK_TrafficSourceNumber";
     const UK_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_UK_TrafficMediumNumber";
@@ -81,6 +85,9 @@ class Order extends Order_parent
     public $usedCouponCode = "";
     public $consumerSalutation;
     public $consumerCountry;
+
+    // TODO
+    public $consumerYearOfBirth = "";
 
     public function initSovendusData($basket): void
     {
@@ -146,7 +153,12 @@ class Order extends Order_parent
                 $this->trafficSourceNumber = (int) $moduleSettingBridge->get(self::IT_TRAFFIC_SOURCE_NUMBER, self::MODULE_ID);
                 $this->trafficMediumNumber = (int) $moduleSettingBridge->get(self::IT_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID);
                 break;
-            case "UK":
+            case "IE":
+                $this->enabled = (int) $moduleSettingBridge->get(self::IE_SOVENDUS_ENABLED, self::MODULE_ID);
+                $this->trafficSourceNumber = (int) $moduleSettingBridge->get(self::IE_TRAFFIC_SOURCE_NUMBER, self::MODULE_ID);
+                $this->trafficMediumNumber = (int) $moduleSettingBridge->get(self::IE_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID);
+                break;
+            case "GB":
                 $this->enabled = (int) $moduleSettingBridge->get(self::UK_SOVENDUS_ENABLED, self::MODULE_ID);
                 $this->trafficSourceNumber = (int) $moduleSettingBridge->get(self::UK_TRAFFIC_SOURCE_NUMBER, self::MODULE_ID);
                 $this->trafficMediumNumber = (int) $moduleSettingBridge->get(self::UK_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID);
