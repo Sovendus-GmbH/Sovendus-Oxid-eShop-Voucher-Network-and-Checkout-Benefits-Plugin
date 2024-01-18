@@ -16,7 +16,8 @@
                 orderId: '{{ order.oxorder__oxordernr.value }}',
                 orderValue: '{{ order.oxorder__oxtotalnetsum.rawValue }}',
                 orderCurrency: '{{ order.oxorder__oxcurrency.rawValue }}',
-                usedCouponCode: '{{ order.usedCouponCode }}'
+                usedCouponCode: '{{ order.usedCouponCode }}',
+                integrationType: "oxid-1.0.3"
             });
             window.sovConsumer = {
                 consumerSalutation: '{{ order.consumerSalutation }}',
