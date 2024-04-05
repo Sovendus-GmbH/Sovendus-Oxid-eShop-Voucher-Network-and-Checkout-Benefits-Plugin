@@ -35,9 +35,14 @@ class Order extends Order_parent
     const NL_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_NL_TrafficSourceNumber";
     const NL_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_NL_TrafficMediumNumber";
 
-    const CH_SOVENDUS_ENABLED = "sovendus_checkout_benefits_voucher_network_CH_SovendusEnabled";
-    const CH_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_CH_TrafficSourceNumber";
-    const CH_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_CH_TrafficMediumNumber";
+    const CH_DE_SOVENDUS_ENABLED = "sovendus_checkout_benefits_voucher_network_CH_DE_SovendusEnabled";
+    const CH_DE_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_CH_DE_TrafficSourceNumber";
+    const CH_DE_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_CH_DE_TrafficMediumNumber";
+
+
+    const CH_FR_SOVENDUS_ENABLED = "sovendus_checkout_benefits_voucher_network_CH_FR_SovendusEnabled";
+    const CH_FR_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_CH_FR_TrafficSourceNumber";
+    const CH_FR_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_CH_FR_TrafficMediumNumber";
 
     const FR_SOVENDUS_ENABLED = "sovendus_checkout_benefits_voucher_network_FR_SovendusEnabled";
     const FR_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_FR_TrafficSourceNumber";
@@ -67,9 +72,13 @@ class Order extends Order_parent
     const ES_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_ES_TrafficSourceNumber";
     const ES_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_ES_TrafficMediumNumber";
 
-    const BE_SOVENDUS_ENABLED = "sovendus_checkout_benefits_voucher_network_BE_SovendusEnabled";
-    const BE_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_BE_TrafficSourceNumber";
-    const BE_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_BE_TrafficMediumNumber";
+    const BE_NL_SOVENDUS_ENABLED = "sovendus_checkout_benefits_voucher_network_BE_NL_SovendusEnabled";
+    const BE_NL_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_BE_NL_TrafficSourceNumber";
+    const BE_NL_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_BE_NL_TrafficMediumNumber";
+
+    const BE_FR_SOVENDUS_ENABLED = "sovendus_checkout_benefits_voucher_network_BE_FR_SovendusEnabled";
+    const BE_FR_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_BE_FR_TrafficSourceNumber";
+    const BE_FR_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_BE_FR_TrafficMediumNumber";
 
     const PL_SOVENDUS_ENABLED = "sovendus_checkout_benefits_voucher_network_PL_SovendusEnabled";
     const PL_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_PL_TrafficSourceNumber";
@@ -139,9 +148,24 @@ class Order extends Order_parent
                 $this->trafficMediumNumber = (int) $moduleSettingBridge->get(self::NL_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID);
                 break;
             case "CH":
-                $this->enabled = (int) $moduleSettingBridge->get(self::CH_SOVENDUS_ENABLED, self::MODULE_ID);
-                $this->trafficSourceNumber = (int) $moduleSettingBridge->get(self::CH_TRAFFIC_SOURCE_NUMBER, self::MODULE_ID);
-                $this->trafficMediumNumber = (int) $moduleSettingBridge->get(self::CH_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID);
+                $this->enabled = json_encode(
+                    array(
+                        "de" => (int) $moduleSettingBridge->get(self::CH_DE_SOVENDUS_ENABLED, self::MODULE_ID),
+                        "fr" => (int) $moduleSettingBridge->get(self::CH_FR_SOVENDUS_ENABLED, self::MODULE_ID)
+                    )
+                );
+                $this->trafficSourceNumber = json_encode(
+                    array(
+                        "de" => (int) $moduleSettingBridge->get(self::CH_DE_TRAFFIC_SOURCE_NUMBER, self::MODULE_ID),
+                        "fr" => (int) $moduleSettingBridge->get(self::CH_FR_TRAFFIC_SOURCE_NUMBER, self::MODULE_ID)
+                    )
+                );
+                $this->trafficMediumNumber = json_encode(
+                    array(
+                        "de" => (int) $moduleSettingBridge->get(self::CH_DE_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID),
+                        "fr" => (int) $moduleSettingBridge->get(self::CH_FR_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID)
+                    )
+                );
                 break;
             case "FR":
                 $this->enabled = (int) $moduleSettingBridge->get(self::FR_SOVENDUS_ENABLED, self::MODULE_ID);
@@ -179,9 +203,24 @@ class Order extends Order_parent
                 $this->trafficMediumNumber = (int) $moduleSettingBridge->get(self::ES_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID);
                 break;
             case "BE":
-                $this->enabled = (int) $moduleSettingBridge->get(self::BE_SOVENDUS_ENABLED, self::MODULE_ID);
-                $this->trafficSourceNumber = (int) $moduleSettingBridge->get(self::BE_TRAFFIC_SOURCE_NUMBER, self::MODULE_ID);
-                $this->trafficMediumNumber = (int) $moduleSettingBridge->get(self::BE_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID);
+                $this->enabled = json_encode(
+                    array(
+                        "nl" => (int) $moduleSettingBridge->get(self::BE_NL_SOVENDUS_ENABLED, self::MODULE_ID),
+                        "fr" => (int) $moduleSettingBridge->get(self::BE_FR_SOVENDUS_ENABLED, self::MODULE_ID)
+                    )
+                );
+                $this->trafficSourceNumber = json_encode(
+                    array(
+                        "nl" => (int) $moduleSettingBridge->get(self::BE_NL_TRAFFIC_SOURCE_NUMBER, self::MODULE_ID),
+                        "fr" => (int) $moduleSettingBridge->get(self::BE_FR_TRAFFIC_SOURCE_NUMBER, self::MODULE_ID)
+                    )
+                );
+                $this->trafficMediumNumber = json_encode(
+                    array(
+                        "nl" => (int) $moduleSettingBridge->get(self::BE_NL_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID),
+                        "fr" => (int) $moduleSettingBridge->get(self::BE_FR_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID)
+                    )
+                );
                 break;
             case "PL":
                 $this->enabled = (int) $moduleSettingBridge->get(self::PL_SOVENDUS_ENABLED, self::MODULE_ID);

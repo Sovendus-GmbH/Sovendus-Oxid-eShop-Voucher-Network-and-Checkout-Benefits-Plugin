@@ -25,10 +25,15 @@ $aLang = [
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_NL_TrafficSourceNumber' => 'Niederlande Traffic Source Number',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_NL_TrafficMediumNumber' => 'Niederlande Traffic Medium Number',
 
-    'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_ch' => 'Schweiz Einstellungen',
-    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_SovendusEnabled' => 'Aktiviere Sovendus Schweiz',
-    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_TrafficSourceNumber' => 'Schweiz Traffic Source Number',
-    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_TrafficMediumNumber' => 'Schweiz Traffic Medium Number',
+    'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_ch_de' => 'Schweiz Deutsch Einstellungen',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_DE_SovendusEnabled' => 'Aktiviere Sovendus Schweiz Deutsch',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_DE_TrafficSourceNumber' => 'Schweiz Deutsch Traffic Source Number',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_DE_TrafficMediumNumber' => 'Schweiz Deutsch Traffic Medium Number',
+
+    'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_ch_fr' => 'Schweiz Französisch Einstellungen',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_FR_SovendusEnabled' => 'Aktiviere Sovendus Schweiz Französisch',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_FR_TrafficSourceNumber' => 'Schweiz Französisch Traffic Source Number',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_FR_TrafficMediumNumber' => 'Schweiz Französisch Traffic Medium Number',
 
     'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_fr' => 'Frankreich Einstellungen',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_FR_SovendusEnabled' => 'Aktiviere Sovendus Frankreich',
@@ -65,10 +70,15 @@ $aLang = [
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_ES_TrafficSourceNumber' => 'Spanien Traffic Source Number',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_ES_TrafficMediumNumber' => 'Spanien Traffic Medium Number',
 
-    'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_be' => 'Belgien Einstellungen',
-    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_BE_SovendusEnabled' => 'Aktiviere Sovendus Belgien',
-    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_BE_TrafficSourceNumber' => 'Belgien Traffic Source Number',
-    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_BE_TrafficMediumNumber' => 'Belgien Traffic Medium Number',
+    'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_be_nl' => 'Belgien Niederländisch Einstellungen',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_BE_NL_SovendusEnabled' => 'Aktiviere Sovendus Belgien Niederländisch',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_BE_NL_TrafficSourceNumber' => 'Belgien Niederländisch Traffic Source Number',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_BE_NL_TrafficMediumNumber' => 'Belgien Niederländisch Traffic Medium Number',
+
+    'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_be_fr' => 'Belgien Französisch Einstellungen',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_BE_FR_SovendusEnabled' => 'Aktiviere Sovendus Belgien Französisch',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_BE_FR_TrafficSourceNumber' => 'Belgien Französisch Traffic Source Number',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_BE_FR_TrafficMediumNumber' => 'Belgien Französisch Traffic Medium Number',
 
     'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_pl' => 'Polen Einstellungen',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_PL_SovendusEnabled' => 'Aktiviere Sovendus Polen',

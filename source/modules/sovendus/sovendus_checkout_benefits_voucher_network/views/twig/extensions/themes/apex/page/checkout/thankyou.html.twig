@@ -1,15 +1,30 @@
 {% extends 'page/checkout/thankyou.html.twig' %}
 
 {% block checkout_thankyou_info %}
-	{{ parent() }}
-	{{ order.initSovendusData(basket) }}
-	{% if order.active %}
-		<div id="sovendus-container"></div>
-		<script>
-			window.sovIframes = window.sovIframes || [];
+  {{ parent() }}
+  {{ order.initSovendusData(basket) }}
+  {% if order.active %}
+    <div id="sovendus-container"></div>
+    <script>
+        let isActive = false;
+        let trafficSourceNumber = "";
+        let trafficMediumNumber = "";
+        const multiLangCountries = ["CH", "BE"]
+        if (multiLangCountries.includes("{{ order.consumerCountry }}")) {
+            const lang = document.documentElement.lang.split("-")[0];
+            isActive = JSON.parse('{{ order.enabled }}'.replace(/&quot;/g, '"'))[lang];
+            trafficSourceNumber = JSON.parse('{{ order.trafficSourceNumber }}'.replace(/&quot;/g, '"'))[lang];
+            trafficMediumNumber = JSON.parse('{{ order.trafficMediumNumber }}'.replace(/&quot;/g, '"'))[lang];
+        } else {
+            trafficSourceNumber = '{{ order.trafficSourceNumber }}'.replace(/&quot;/g, '');
+            trafficMediumNumber = '{{ order.trafficMediumNumber }}'.replace(/&quot;/g, '');
+            isActive = true;
+        }
+        if (isActive && Number(trafficSourceNumber) > 0 && Number(trafficMediumNumber) > 0) {
+            window.sovIframes = window.sovIframes || [];
             window.sovIframes.push({
-                trafficSourceNumber: {{ order.trafficSourceNumber }},
-                trafficMediumNumber: {{ order.trafficMediumNumber }},
+                trafficSourceNumber: trafficSourceNumber,
+                trafficMediumNumber: trafficMediumNumber,
                 iframeContainerId: 'sovendus-container',
                 timestamp: '{{ order.timestamp }}',
                 sessionId: '{{ order.oxorder__oxid.value }}',
@@ -17,7 +32,7 @@
                 orderValue: '{{ order.oxorder__oxtotalnetsum.rawValue }}',
                 orderCurrency: '{{ order.oxorder__oxcurrency.rawValue }}',
                 usedCouponCode: '{{ order.usedCouponCode }}',
-                integrationType: "oxid-1.0.3"
+                integrationType: "oxid-1.0.4"
             });
             window.sovConsumer = {
                 consumerSalutation: '{{ order.consumerSalutation }}',
@@ -32,7 +47,13 @@
                 consumerCity: '{{ order.oxorder__oxbillcity.rawValue }}',
                 consumerCountry: '{{ order.consumerCountry }}'
             };
-		</script>
-		<script type="text/javascript" src="https://api.sovendus.com/sovabo/common/js/flexibleIframe.js" async="true"></script>
-	{% endif %}
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.async = true;
+            script.src = window.location.protocol + "//api.sovendus.com/sovabo/common/js/flexibleIframe.js";
+            script.setAttribute('data-usercentrics', 'Sovendus');
+            document.body.appendChild(script);
+        }
+    </script>
+  {% endif %}
 {% endblock %}

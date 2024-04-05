@@ -11,7 +11,7 @@ $aModule = array(
     'title' => 'Sovendus Voucher Network & Checkout Benefits',
     'description' => 'Official Sovendus Voucher Network & Checkout Benefits module for Oxid eShop',
     'thumbnail' => 'plugin.png',
-    'version' => '1.0.3',
+    'version' => '1.0.4',
     'author' => 'Sovendus - Marcus Brandstaetter',
     'url' => "https://online.sovendus.com/kontakt/kontakt-firmenkunden/",
     'extend' => [
@@ -69,21 +69,38 @@ $aModule = array(
             'name' => 'sovendus_checkout_benefits_voucher_network_NL_TrafficMediumNumber',
             'type' => 'num',
         ],
-        /** CH */
+        /** CH DE */
         [
-            'group' => 'sovendus_checkout_benefits_voucher_network_ch',
-            'name' => 'sovendus_checkout_benefits_voucher_network_CH_SovendusEnabled',
+            'group' => 'sovendus_checkout_benefits_voucher_network_ch_de',
+            'name' => 'sovendus_checkout_benefits_voucher_network_CH_DE_SovendusEnabled',
             'type' => 'bool',
             'value' => false
         ],
         [
-            'group' => 'sovendus_checkout_benefits_voucher_network_ch',
-            'name' => 'sovendus_checkout_benefits_voucher_network_CH_TrafficSourceNumber',
+            'group' => 'sovendus_checkout_benefits_voucher_network_ch_de',
+            'name' => 'sovendus_checkout_benefits_voucher_network_CH_DE_TrafficSourceNumber',
             'type' => 'num',
         ],
         [
-            'group' => 'sovendus_checkout_benefits_voucher_network_ch',
-            'name' => 'sovendus_checkout_benefits_voucher_network_CH_TrafficMediumNumber',
+            'group' => 'sovendus_checkout_benefits_voucher_network_ch_de',
+            'name' => 'sovendus_checkout_benefits_voucher_network_CH_DE_TrafficMediumNumber',
+            'type' => 'num',
+        ],
+        /** CH FR */
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_ch_fr',
+            'name' => 'sovendus_checkout_benefits_voucher_network_CH_FR_SovendusEnabled',
+            'type' => 'bool',
+            'value' => false
+        ],
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_ch_fr',
+            'name' => 'sovendus_checkout_benefits_voucher_network_CH_FR_TrafficSourceNumber',
+            'type' => 'num',
+        ],
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_ch_fr',
+            'name' => 'sovendus_checkout_benefits_voucher_network_CH_FR_TrafficMediumNumber',
             'type' => 'num',
         ],
         /** FR */
@@ -205,21 +222,38 @@ $aModule = array(
             'name' => 'sovendus_checkout_benefits_voucher_network_ES_TrafficMediumNumber',
             'type' => 'num',
         ],
-        /** BE */
+        /** BE NL */
         [
-            'group' => 'sovendus_checkout_benefits_voucher_network_be',
-            'name' => 'sovendus_checkout_benefits_voucher_network_BE_SovendusEnabled',
+            'group' => 'sovendus_checkout_benefits_voucher_network_be_nl',
+            'name' => 'sovendus_checkout_benefits_voucher_network_BE_NL_SovendusEnabled',
             'type' => 'bool',
             'value' => false
         ],
         [
-            'group' => 'sovendus_checkout_benefits_voucher_network_be',
-            'name' => 'sovendus_checkout_benefits_voucher_network_BE_TrafficSourceNumber',
+            'group' => 'sovendus_checkout_benefits_voucher_network_be_nl',
+            'name' => 'sovendus_checkout_benefits_voucher_network_BE_NL_TrafficSourceNumber',
             'type' => 'num',
         ],
         [
-            'group' => 'sovendus_checkout_benefits_voucher_network_be',
-            'name' => 'sovendus_checkout_benefits_voucher_network_BE_TrafficMediumNumber',
+            'group' => 'sovendus_checkout_benefits_voucher_network_be_nl',
+            'name' => 'sovendus_checkout_benefits_voucher_network_BE_NL_TrafficMediumNumber',
+            'type' => 'num',
+        ],
+        /** BE FR */
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_be_fr',
+            'name' => 'sovendus_checkout_benefits_voucher_network_BE_FR_SovendusEnabled',
+            'type' => 'bool',
+            'value' => false
+        ],
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_be_fr',
+            'name' => 'sovendus_checkout_benefits_voucher_network_BE_FR_TrafficSourceNumber',
+            'type' => 'num',
+        ],
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_be_fr',
+            'name' => 'sovendus_checkout_benefits_voucher_network_BE_FR_TrafficMediumNumber',
             'type' => 'num',
         ],
         /** PL */
