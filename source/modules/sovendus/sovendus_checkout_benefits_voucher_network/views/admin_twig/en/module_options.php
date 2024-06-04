@@ -35,6 +35,11 @@ $aLang = [
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_FR_TrafficSourceNumber' => 'Switzerland French Traffic Source Number',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_FR_TrafficMediumNumber' => 'Switzerland French Traffic Medium Number',
 
+    'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_ch_it' => 'Switzerland Italian Settings',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_IT_SovendusEnabled' => 'Enable Sovendus Switzerland Italian',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_IT_TrafficSourceNumber' => 'Switzerland Italian Traffic Source Number',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_CH_IT_TrafficMediumNumber' => 'Switzerland Italian Traffic Medium Number',
+
     'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_fr' => 'France Settings',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_FR_SovendusEnabled' => 'Enable Sovendus France',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_FR_TrafficSourceNumber' => 'France Traffic Source Number',
@@ -84,4 +89,9 @@ $aLang = [
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_PL_SovendusEnabled' => 'Enable Sovendus Poland',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_PL_TrafficSourceNumber' => 'Poland Traffic Source Number',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_PL_TrafficMediumNumber' => 'Poland Traffic Medium Number',
+
+    'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_no' => 'Norway Settings',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_NO_SovendusEnabled' => 'Enable Sovendus Norway',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_NO_TrafficSourceNumber' => 'Norway Traffic Source Number',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_NO_TrafficMediumNumber' => 'Norway Traffic Medium Number',
 ];

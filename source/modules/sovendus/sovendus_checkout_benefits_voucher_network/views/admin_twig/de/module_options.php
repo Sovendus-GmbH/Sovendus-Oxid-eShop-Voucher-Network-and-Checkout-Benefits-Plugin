@@ -84,4 +84,9 @@ $aLang = [
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_PL_SovendusEnabled' => 'Aktiviere Sovendus Polen',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_PL_TrafficSourceNumber' => 'Polen Traffic Source Number',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_PL_TrafficMediumNumber' => 'Polen Traffic Medium Number',
+
+    'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_no' => 'Norwegen Einstellungen',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_NO_SovendusEnabled' => 'Aktiviere Sovendus Norwegen',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_NO_TrafficSourceNumber' => 'Norwegen Traffic Source Number',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_NO_TrafficMediumNumber' => 'Norwegen Traffic Medium Number',
 ];
