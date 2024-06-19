@@ -92,6 +92,13 @@ class Order extends Order_parent
     const NO_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_NO_TrafficSourceNumber";
     const NO_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_NO_TrafficMediumNumber";
 
+    const FI_SOVENDUS_ENABLED = "sovendus_checkout_benefits_voucher_network_FI_SovendusEnabled";
+    const FI_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_FI_TrafficSourceNumber";
+    const FI_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_FI_TrafficMediumNumber";
+
+    const PT_SOVENDUS_ENABLED = "sovendus_checkout_benefits_voucher_network_PT_SovendusEnabled";
+    const PT_TRAFFIC_SOURCE_NUMBER = "sovendus_checkout_benefits_voucher_network_PT_TrafficSourceNumber";
+    const PT_TRAFFIC_MEDIUM_NUMBER = "sovendus_checkout_benefits_voucher_network_PT_TrafficMediumNumber";
 
 
     public $active;
@@ -242,6 +249,16 @@ class Order extends Order_parent
                 $this->enabled = (int) $moduleSettingBridge->get(self::NO_SOVENDUS_ENABLED, self::MODULE_ID);
                 $this->trafficSourceNumber = (int) $moduleSettingBridge->get(self::NO_TRAFFIC_SOURCE_NUMBER, self::MODULE_ID);
                 $this->trafficMediumNumber = (int) $moduleSettingBridge->get(self::NO_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID);
+                break;
+            case "FI":
+                $this->enabled = (int) $moduleSettingBridge->get(self::FI_SOVENDUS_ENABLED, self::MODULE_ID);
+                $this->trafficSourceNumber = (int) $moduleSettingBridge->get(self::FI_TRAFFIC_SOURCE_NUMBER, self::MODULE_ID);
+                $this->trafficMediumNumber = (int) $moduleSettingBridge->get(self::FI_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID);
+                break;
+            case "PT":
+                $this->enabled = (int) $moduleSettingBridge->get(self::PT_SOVENDUS_ENABLED, self::MODULE_ID);
+                $this->trafficSourceNumber = (int) $moduleSettingBridge->get(self::PT_TRAFFIC_SOURCE_NUMBER, self::MODULE_ID);
+                $this->trafficMediumNumber = (int) $moduleSettingBridge->get(self::PT_TRAFFIC_MEDIUM_NUMBER, self::MODULE_ID);
                 break;
             default:
                 break;

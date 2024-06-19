@@ -307,5 +307,39 @@ $aModule = array(
             'name' => 'sovendus_checkout_benefits_voucher_network_NO_TrafficMediumNumber',
             'type' => 'num',
         ],
+        /** FI */
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_fi',
+            'name' => 'sovendus_checkout_benefits_voucher_network_FI_SovendusEnabled',
+            'type' => 'bool',
+            'value' => false
+        ],
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_fi',
+            'name' => 'sovendus_checkout_benefits_voucher_network_FI_TrafficSourceNumber',
+            'type' => 'num',
+        ],
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_fi',
+            'name' => 'sovendus_checkout_benefits_voucher_network_FI_TrafficMediumNumber',
+            'type' => 'num',
+        ],
+        /** PT */
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_pt',
+            'name' => 'sovendus_checkout_benefits_voucher_network_PT_SovendusEnabled',
+            'type' => 'bool',
+            'value' => false
+        ],
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_pt',
+            'name' => 'sovendus_checkout_benefits_voucher_network_PT_TrafficSourceNumber',
+            'type' => 'num',
+        ],
+        [
+            'group' => 'sovendus_checkout_benefits_voucher_network_pt',
+            'name' => 'sovendus_checkout_benefits_voucher_network_PT_TrafficMediumNumber',
+            'type' => 'num',
+        ],
     ],
 );

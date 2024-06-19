@@ -94,4 +94,14 @@ $aLang = [
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_NO_SovendusEnabled' => 'Enable Sovendus Norway',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_NO_TrafficSourceNumber' => 'Norway Traffic Source Number',
     'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_NO_TrafficMediumNumber' => 'Norway Traffic Medium Number',
+
+    'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_fi' => 'Finnland Settings',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_FI_SovendusEnabled' => 'Enable Sovendus Finnland',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_FI_TrafficSourceNumber' => 'Finnland Traffic Source Number',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_FI_TrafficMediumNumber' => 'Finnland Traffic Medium Number',
+
+    'SHOP_MODULE_GROUP_sovendus_checkout_benefits_voucher_network_pt' => 'Portugal Settings',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_PT_SovendusEnabled' => 'Enable Sovendus Portugal',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_PT_TrafficSourceNumber' => 'Portugal Traffic Source Number',
+    'SHOP_MODULE_sovendus_checkout_benefits_voucher_network_PT_TrafficMediumNumber' => 'Portugal Traffic Medium Number',
 ];
