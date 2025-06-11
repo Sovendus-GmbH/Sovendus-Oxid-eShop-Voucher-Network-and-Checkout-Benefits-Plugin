@@ -24,4 +24,6 @@ coming soon...
 1. Go to your Oxid eShop shop admin dashboard
 2. In the menu on the left, click on Extensions -> Module
 3. Click on the Sovendus Voucher Network & Checkout Benefits module and then click on the activate button
-3. Enter the traffic source number and traffic medium number, you have received in your integration documentation, for each country and enable them. Once saved, the sovendus banner will be visible on the post checkout page
+3. Enter the traffic source number and traffic medium number, you have received in your integration documentation, for each country and enable them.
+
+   Once saved, the sovendus banner will be visible on the post checkout page.
